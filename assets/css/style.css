@@ -1,0 +1,32 @@
+.myHeight {
+    width: 16rem;
+    height: auto;
+}
+
+#myParent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#pkdx {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#myImg {
+    position: absolute;
+    top: 7rem;
+    left: 12.5rem;
+}
+
+#description {
+    position : absolute;
+    top: 8rem;
+    left: 34rem;
+}
+.size {
+    height: 2rem;
+    width: auto;
+}
