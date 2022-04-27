@@ -1,32 +1,23 @@
 .myHeight {
-    width: 16rem;
+    width: 30rem;
     height: auto;
 }
 
-#myParent {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-#pkdx {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-#myImg {
-    position: absolute;
-    top: 7rem;
-    left: 4rem;
-}
-
-#description {
-    position : absolute;
-    top: 8rem;
-    left: 25rem;
-}
 .size {
     height: 2rem;
     width: auto;
+}
+
+body {
+    background-color: #fb0506;
+}
+
+#myImgFont {
+    background-color: white;
+    height: 30rem;
+}
+
+#myContentFont {
+    background-color: #30fa06;
+    height: 30rem;
 }
