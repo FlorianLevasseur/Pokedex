@@ -18,13 +18,13 @@
 #myImg {
     position: absolute;
     top: 7rem;
-    left: 5rem;
+    left: 4rem;
 }
 
 #description {
     position : absolute;
     top: 8rem;
-    left: 26rem;
+    left: 25rem;
 }
 .size {
     height: 2rem;
