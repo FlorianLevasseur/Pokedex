@@ -22,7 +22,7 @@ async function getData() {
             let myDescription = "";
             document.getElementById("myImg").hidden = false;
             document.getElementById('myImg').src = myData.sprites.front_default;
-            myDescription = `${document.getElementById('mySearch').value.toUpperCase()}<br><br>Type :`;
+            myDescription = `#${myData.id}<br>${document.getElementById('mySearch').value.toUpperCase()}<br><br>Type :`;
             typesTable.forEach(element =>
                 myDescription += ` <img src="assets/img/${element.type.name}.png" class="size"> /`
             );
