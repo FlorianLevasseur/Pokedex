@@ -1,5 +1,5 @@
 .myHeight {
-    width: 3rem;
+    width: 17rem;
     height: auto;
 }
 
@@ -14,10 +14,10 @@ body {
 
 #myImgFont {
     background-color: white;
-    height: 30rem;
+    height: 17rem;
 }
 
 #myContentFont {
     background-color: #30fa06;
-    height: 30rem;
+    height: 17rem;
 }
