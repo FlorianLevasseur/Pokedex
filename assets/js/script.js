@@ -4,7 +4,14 @@ async function getData() {
     myId = "";
     await axios.get("./assets/js/myPokedex.json")
         .then(response => {
-            myId = response.data.pokedex.find(item => item.name.toLowerCase() == document.getElementById('mySearch').value.toLowerCase()).id
+            if (document.getElementById('mySearch').value > 0 && document.getElementById('mySearch').value < 899) {
+                myId = response.data.pokedex.find(item => item.id == document.getElementById('mySearch').value).id
+                myName = response.data.pokedex.find(item => item.id == document.getElementById('mySearch').value).name
+            } else {
+                myId = response.data.pokedex.find(item => item.name.toLowerCase() == document.getElementById('mySearch').value.toLowerCase()).id
+                myName = response.data.pokedex.find(item => item.name.toLowerCase() == document.getElementById('mySearch').value.toLowerCase()).name
+            }
+
         })
         .catch(err => {
             document.getElementById("myImg").hidden = true;
@@ -22,7 +29,7 @@ async function getData() {
             let myDescription = "";
             document.getElementById("myImg").hidden = false;
             document.getElementById('myImg').src = myData.sprites.front_default;
-            myDescription = `#${myData.id}<br>${document.getElementById('mySearch').value.toUpperCase()}<br><br>Type :`;
+            myDescription = `#${myData.id}<br>${myName.toUpperCase()}<br><br>Type :`;
             typesTable.forEach(element =>
                 myDescription += ` <img src="assets/img/${element.type.name}.png" class="size"> /`
             );
